@@ -1,0 +1,92 @@
+/* 
+filename: desktop.css
+author: Le Xuan Nhat 
+created: 01-03-2023
+last modified: 03-03-2023
+description: CSS for assignment 1 (mobile)
+*/
+
+/* Adjusting and re-aligning content for smaller viewports - such as phone and tablet */
+
+@media (max-width: 900px) {
+
+    h1,
+    h2,
+    form {
+        text-align: center;
+    }
+
+    #typing {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #achieve {
+        text-align: center;
+    }
+
+    .about,
+    form {
+        margin: 5px auto;
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #me {
+        margin: 2px auto;
+        float: none;
+        max-width: 200px;
+        max-height: 200px;
+        position: relative;
+        animation: slidein 5s infinite;
+        display: block;
+    }
+
+    @keyframes slidein {
+        0% {
+            left: 0;
+        }
+
+        25% {
+            left: 10%;
+        }
+
+        50% {
+            left: 0%;
+        }
+
+        75% {
+            left: -10%;
+        }
+
+        100% {
+            left: 0%;
+        }
+    }
+
+
+}
+
+@media (max-width: 800px) {
+    img {
+        max-width: 80%;
+    }
+
+    article {
+        margin: 5px 0;
+        width: 90%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    nav li {
+        display: inline;
+    }
+}
