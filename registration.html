@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web Development">
+    <meta name="keywords" content="Assignment 1">
+    <meta name="author" content="Le Xuan Nhat">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css">
+
+    <title>Registration</title>
+</head>
+
+<body>
+    <!-- Header and navigation bar  -->
+    <header>
+
+        <h1 id="title">Sweet Life <img src="images/bing.png" alt="coffee logo"></h1>
+
+        <nav>
+            <input type="checkbox" id="nav">
+            <label for="nav"><img src="images/setup.png" alt="navbarlogo"></label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a id="current">Register</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="features.html">Features</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Registration Form -->
+    <main id="reg">
+
+        <form id="regform" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" method="post">
+            <h2>User Registration Form</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="password"><br><br>
+
+            <label for="pwd2">Retype Password:</label>
+            <input type="password" id="pwd2" name="password"><br><br>
+
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <p>Favorite Ice Cream Flavors:</p>
+            <input type="checkbox" id="ice1" name="icecream[]" value="choco">
+            <label for="ice1">Charming Choco</label><br>
+            <input type="checkbox" id="ice2" name="icecream[]" value="vanilla">
+            <label for="ice2">Vigorous Vanilla</label><br>
+            <input type="checkbox" id="ice3" name="icecream[]" value="strawberry">
+            <label for="ice3">Sweet Strawberry</label><br><br>
+
+            <label for="location">Location:</label>
+            <select id="location" name="location">
+                <option value="">--Please choose a location--</option>
+                <option value="paper">Cau Giay</option>
+                <option value="3d">Ba Dinh</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Le Xuan Nhat - COS10005</p>
+        <p><a href="https://www.flaticon.com/free-icons/ice-cream-cone" title="ice cream cone icons">Ice cream icons by
+                Superarticons - Flaticon</a>, Background by <a
+                href="https://unsplash.com/@lamaroscu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lama
+                Roscu</a> on <a
+                href="https://unsplash.com/images/food/ice-cream?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            , <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons by Alfredo Creates -
+                Flaticon</a></p>
+    </footer>
+</body>
+
+</html>
