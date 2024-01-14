@@ -1,2 +1,2 @@
 # COS10005
-Web Development
+Web Project for Assignment 2
